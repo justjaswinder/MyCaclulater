@@ -361,7 +361,8 @@ class ViewController: UIViewController {
             
         }
         added = ""
-        if result.rounded(.up) == result.rounded(.down){
+        if result < 2147489646 && result.rounded(.up) == result.rounded(.down){
+            
             
             let result1 = Int(result)
             resultLabel.text = String(result1)
