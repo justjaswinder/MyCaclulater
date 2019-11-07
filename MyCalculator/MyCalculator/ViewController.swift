@@ -18,11 +18,17 @@ class ViewController: UIViewController {
     var lastResult = 0.0
     var isLastOperator = false
     var isMinus = true
+    @IBOutlet weak var lablelView: UIView!
     //var arrNum : [Int] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        lablelView.layer.cornerRadius = 14.0
+        for i in 0..<roundBtn.count{
+            roundBtn[i].layer.cornerRadius = 12.0
+        }
         // Do any additional setup after loading the view.
     }
+    @IBOutlet var roundBtn: [UIButton]!
     
     
     
